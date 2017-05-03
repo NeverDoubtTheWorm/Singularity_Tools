@@ -221,7 +221,7 @@ ln -s libGLESv2_nvidia.so.$nvid_ver libGLESv2_nvidia.so.2
 
 
 if [ "$create_only" != "1" ]; then
-    singularity copy $simg -r $tmp/nvidia /usr/local/
+    sudo singularity copy $simg -r $tmp/nvidia /usr/local/
 else
     echo "nvidia file at $tmp/nvidia"
 fi
